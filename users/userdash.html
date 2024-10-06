@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+            background: rgb(239, 255, 252);
+        }
+        nav{
+            list-style: none;
+            background-color: rgb(185, 240, 67);
+            height: 590px;
+            width:250px;
+        }
+        nav ul{
+            display:flex;
+            flex-direction: column;
+            align-items:normal;
+            margin-left: 20px;
+
+        }
+        nav li{
+            color:purple;
+            list-style: none;
+            margin-top:15px;
+        }
+        main{
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="side">
+            <ul>
+                <li><h1 style="text-transform: uppercase;">dashboard</h1></li>
+                <li><a href="">Map</a></li>
+                <li><a href="">Document</a></li>
+                <li><a href="">Profiling</a></li>
+                <li><a href="">Setting</a></li>
+                <li><a href="">Log-out</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div>
+            <h2>Maps</h2>
+            <button class="maps">view map</button>
+        </div>
+        <div>
+            <h2>Issue Document</h2>
+            <button class="maps">make a request</button>
+        </div>
+        <div>
+            <h2>Barangays</h2>
+            <button class="brgy">View Profiling</button>
+        </div>
+        <div>
+            <h2>Settings</h2>
+            <button class="set">settings</button>
+        </div>
+</body>
+</html>

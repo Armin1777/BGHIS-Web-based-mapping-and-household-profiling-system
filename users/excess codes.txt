@@ -1,0 +1,23 @@
+<main>
+        <div class="mina">
+            <div>
+                <h2>Maps</h2>
+                <button class="maps">view map</button>
+            </div>
+            <div>
+                <h2>Issue Document</h2>
+                <button class="maps">make a request</button>
+            </div>
+            <div>
+                <h2>Barangays</h2>
+                <button class="brgy">View Profiling</button>
+            </div>
+            <div>
+                <h2>Settings</h2>
+                <button class="set">settings</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
