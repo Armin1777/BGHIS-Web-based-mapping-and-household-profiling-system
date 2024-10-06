@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+h2{
+    margin-right: 40px;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(city-map-any-kind-digital-info-graphics-print-publication-gps-map_403715-37.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.nash{
+    background: transparent;
+    width: 420px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    padding: 30px 40px;
+    border-radius: 10px;  
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    align-self:center;
+    margin-right:50px;
+    margin-top: 30px;
+}
+
+.nash h1{
+    font-size: 36px;
+    text-align: center;
+    margin-left: 30px;
+
+}
+
+.nash h2{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.input-box input{
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    background: transparent;
+    border-color: black;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+    position: center;
+    outline:none;
+}
+
+
+.nash input::placeholder{
+    color: black;
+    
+}
+
+.nash .btn{
+    width: 300px;
+    height: 45px;
+    background: rgb(185, 240, 67);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.nash .btn2{
+    width: 300px;
+    height: 45px;
+    background: rgb(26, 213, 85);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+.nash .btn:hover,
+.nash .btn2:hover{
+    color: white;
+}
+
+.nash .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 10px 0 10px;
+    margin-left: 0;
+    
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color:black;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+nav{
+    background: rgb(185, 240, 67);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav  ul{
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-right: 100px;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active{
+    color: white;
+
+}
+h1.xb{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-right: 300px;
+    font-size: 60px;
+    }
+    p{
+        text-align: center;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    @media(max-width: 600px){
+        .nash{
+            margin-bottom: 12px;
+            width: 100%;
+        }
+    }
+
+
+
