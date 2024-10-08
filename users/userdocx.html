@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearances</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:"Poppins", sans-serif;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        body::-webkit-scrollbar{
+            display:none;
+            scroll-behavior: smooth;
+        }
+        nav{
+            background-color: none;
+        }
+        nav li{
+            height: 50px;
+            list-style-type: none;
+        }
+        nav a{
+            position:relative;
+            font-size:15px;
+            display:flex;
+            text-decoration: none;
+            flex-direction: column;
+            color: rgb(78, 2, 78);
+            transition: .3s;
+             padding: 10px;
+        }
+        nav .fa{
+            margin-left:30px;
+            width: 70px;
+            height:40px;
+            font-size: 18px;
+        }
+        .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .logo1{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:10px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .Sidebar{
+            background-color: rgb(185, 240, 67);
+            list-style: none;
+            position: fixed;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 10px;
+        }
+        .Sidebar .nav-items{
+            margin-left: 30px;
+            font-family: "Poppins", sans-serif;
+            font-weight:normal;
+            font-size: 16px;
+        }
+        .Sidebar a:hover{
+            color: white;
+        }
+        .header{
+            margin-left: 260px;
+            padding:10px;
+            margin-right:40px;
+            border-style:solid;
+            border-top:0;
+            border-right:0;
+            border-left:0;
+            border-color:rgb(78, 2, 78);
+        }
+        .main{
+            padding-left: 270px;
+            padding-right:30px;
+            display:flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .logo1{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:10px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .main .main-skills{
+            margin-top:30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-skills .card1{
+            background:rgb(185, 240, 67);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            height: 100%;
+            margin-right:10px;
+        }
+        .main-skills .card2{
+            background:rgb(147, 177, 82);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .card3{
+            background:rgb(185, 240, 67);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .card4{
+            background:rgb(147, 177, 82);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .card5{
+            background:rgb(185, 240, 67);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .stellar{
+            width:100px;
+            height:40px;
+            background:rgb(78, 2, 78);
+            border-radius:40px;
+            border:none;
+            outline:none;
+            color:white;
+            cursor: pointer;
+            transition: .7s ;
+        }
+        .stellar:hover{
+            background: white;
+            color:rgb(78, 2, 78);
+            font-weight:bold;
+        }
+        .footer{
+            margin-left:290px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+        <nav>
+            <div class="Sidebar">
+                <li><h1 class="logo">BGHIS</h1></li>
+                <li><h1 class="logo1">dashboard</h1></li>
+            </br>
+        </br>
+                <li><a href="userdash.html">
+                    <i class="fa fa-home" aria-hidden="true"><span class="nav-items">Home</span></i>
+                </a></li>
+                <li><a href="maps.html">
+                    <i class="fa fa-map" aria-hidden="true"><span class="nav-items">Maps</span></i>
+                    
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-solid fa-building" aria-hidden="true"><span class="nav-items">Barangay</span></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="fa fa-file" aria-hidden="true"><span class="nav-items">Clearance</span></i>
+                </a></li>
+                <li><a href="settings.html">
+                    <i class="fa fa-solid fa-gear" aria-hidden="true"><span class="nav-items">Settings</span></i>    
+                </a></li> 
+                <li><a href="userlogin.html">
+                    <i class="fa fa-sign-out" aria-hidden="true"><span class="nav-items">Logout</span></i> 
+                </a></li>   
+            </div>
+        </nav>
+    </br>
+<body>
+    <section class="header">
+        <h2 class="message" style="font-size:50px; color:rgb(78, 2, 78);">Apply for a Document now.</h2>
+        <p>Below are the documents you can process and request for the community.</p>
+    </section>
+    <section class="main">
+        <div class="main-skills">
+            <div class="card1">
+                <img src="icons/clearance/custom-clearance.png" style="width: 100px; height: 100px">
+                <h3>Barangay Clearance</h3>
+            </br>
+                <button class="stellar" onclick="location.href='#'">Apply</button>
+            </div>
+            <div class="card2">
+                <img src="icons/clearance/house.png" style="width: 100px; height: 100px">
+                <h3>Residency Certificate</h3>
+            </br>
+                <button class="stellar" onclick="location.href='#'">Apply</button>
+            </div>
+            <div class="card3">
+                <img src="icons/clearance/money.png" style="width: 100px; height: 100px">
+                <h3>Indigency Certificate</h3>
+            </br>
+                <button class="stellar" onclick="location.href='#'">Apply</button>
+            </div>
+            <div class="card4">
+                <img src="icons/clearance/budget.png" style="width: 100px; height: 100px">
+                <h3>Business Clearance</h3>
+            </br>
+                <button class="stellar" onclick="location.href='#'">Apply</button>
+            </div>
+            <div class="card5">
+                <img src="icons/clearance/land.png" style="width: 100px; height: 100px">
+                <h3>Barangay Land Use</h3>
+            </br>
+                <button class="stellar" onclick="location.href='#'">Apply</button>
+            </div>
+    </div>
+    </section>
+    <section class="footer">
+        <h3 style="color:rgb(78, 2, 78); font-weight: lighter; font-size:20px;">Important Reminder:</h3>
+    </br>
+        <p style="margin-left:10px;">When issuing documents, ensure all details are accurately filled out to avoid delays or errors in processing. Double-check that the information provided is complete and correct to facilitate smooth transactions. Always inquire about any additional requirements or procedures specific to the document being issued to ensure compliance with barangay regulations.</p>
+    </section>
+</body>
+</html>

@@ -9,10 +9,9 @@
             padding: 0;
            }
            body{
-            min-height: 150vh;
+            min-height: 100vh;
             box-sizing:border-box;
             font-family: "Poppins", sans-serif;
-            background-color: rgb(239, 255, 252);
            }
            body::-webkit-scrollbar{
             display:none;
@@ -60,55 +59,81 @@
             margin-left: 270px; 
             margin-right: 30px;
             color: black; 
-            border: 2px rgb(0,0,0, 0.1);
-            border-radius: 20px; 
-            background-color: white;
+            border: solid;
+            border-color: rgb(78, 2, 78);
+            background-color:transparent;
             font-size: 25px;
-            box-shadow: 0 0 10px rgba(0,0,0, 0.2);
             margin-top:70px;
            }
            .header h2{
             color: rgb(78, 2, 78);
            }
            .main{
-            display:flex;
-            margin-left:270px;
-            border-radius: 20px;
-            background-color: rgb(26, 213, 85);
-            margin-top: 15;
-            margin-right: 30px;
-            height:35%;
-            
-           }
-           .main-skills{
+            margin-left:290px;
+            padding-right:30px;
             display:flex;
             margin-top:20px;
-            margin-right: 50px;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
            }
-           .main-skills .card{
-            text-align:center;
-            padding: 20px 20px;
-            justify-content: space-evenly;
-           }
-           .card .btn{
-            background:rgb(185, 240, 67);
-            outline: none;
-            width:40%;
-            height:20%;
-            border-radius: 10px;
-            border:none;
-            font-size: 18;
-            font-weight:500px;
-            cursor: pointer;
-            color: rgb(78, 2, 78);
-            transition: .3s;
-           }
-           .card .btn:hover{
-            color:white;
-           }
-           p{
-            font-size: 14px;
-           }
+           .main .main-skills{
+            display: flex;
+            justify-content: space-between;
+            }
+            .main-skills .card1{
+                background:rgb(185, 240, 67);
+                padding:10px;
+                border-radius:10px;
+                width:200px;
+                height: 230px;
+                margin-right:10px;
+            }
+            .main-skills .card2{
+                background:rgb(147, 177, 82);
+                padding:10px;
+                border-radius:10px;
+                width:200px;
+                height: 230px;
+                margin-right:10px;
+            }
+            .main-skills .card3{
+                background:rgb(185, 240, 67);
+                padding:10px;
+                border-radius:10px;
+                width:200px;
+                height: 230px;
+                margin-right:10px;
+
+            }
+            .main-skills .card4{
+                background:rgb(147, 177, 82);
+                padding:10px;
+                border-radius:10px;
+                width:200px;
+                height: 230px;
+                margin-right:10px;
+            }
+            .main-skills .stellar{
+                width:100px;
+                height:40px;
+                background:rgb(78, 2, 78);
+                border-radius:40px;
+                border:none;
+                outline:none;
+                color:white;
+                cursor: pointer;
+                transition: .7s ;
+            }
+            .stellar:hover{
+                background: white;
+                color:rgb(78, 2, 78);
+                font-weight:bold;
+            }
+            .footer{
+            margin-left:290px;
+            margin-top:30px;
+            }
            .Sidebar{
             background-color: rgb(185, 240, 67);
             list-style: none;
@@ -132,9 +157,10 @@
            }
         </style>
     </head>
-            <nav class="caleb">
+        <nav class="caleb">
                 <h1 class="aaron">BGHIS</h1>
-            </nav>
+        </nav>            
+
     <body>
             <nav>
                 <div class="Sidebar">
@@ -152,7 +178,11 @@
                     <li><a href="maps.html">
                         <i class="fa fa-map" aria-hidden="true"></i>
                         <span class="nav-items">Maps</span>
-                    </a></li>  
+                    </a></li>
+                    <li><a href="barangay.html">
+                        <i class="fa fa-regular fa-address-card" aria-hidden="true"></i>
+                        <span class="nav-items">Profiling</span>
+                    </a></li>      
                     <li><a href="requests.html">
                         <i class="fa fa-file" aria-hidden="true"></i>
                         <span class="nav-items">Requests</span>
@@ -167,40 +197,42 @@
        
             <section class="header">
                 <h2 class="message">Hello User!</h2>
-                <p>This is the official BGHIS website where you can use our map to analyze and apply for clearances.</p>
+                <p style="font-size:18px;">This is the official BGHIS website where you can use our map to analyze and apply for clearances.</p>
             </section>
             <section class="main">
                 <div class="main-skills">
-                    <div class="card">
-                        <img src="icons/diversity.png" style="width: 100px; height: 100px">
+                    <div class="card1">
+                        <img src="users/icons/house.png" style="width: 100px; height: 100px">
+                        <h3>View Account</h3>
+                        <p>Go to your account setting to change details.</p>
                     </br>
-                </br>
-                        <h3>Population</h3>
-                        <p>Bulan has approximately 8 Billion inhabitants.</p>
+                        <button class="stellar" onclick="location.href='maps.html'">View Account</button>
                     </div>
-                </div>
-                <div class="main-skills">
-                    <div class="card">
-                        <img src="icons/streets.png" style="width: 100px; height: 100px">
-                    </br>
+                <div class="card2">
+                    <img src="users/icons/map.png" style="width:100px; height:100px">
+                    <h3>Map</h3>
+                    <p>View the local map and study the area of Bulan.</p>
                 </br>
-                        <h3>Barangays</h3>
-                        <p>There are 63 barangays located within this region.</p>
-                    </br>
-                        <button class="btn">View</button>
+                    <button class="stellar">Open map</button>
                     </div>
-                </div>
-                <div class="main-skills">
-                    <div class="card">
-                        <img src="icons/folder.png" style="width: 100px; height: 100px">
-                    </br>
+                <div class="card3">
+                    <img src="users/icons/documentation.png" style="width:100px; height:100px">
+                    <h3>Pending requests</h3>
+                    <p>Process the requests by barangay</p>
                 </br>
-                        <h3>Clearances</h3>
-                        <p>For your list of documents.See it here.</p>
-                    </br>
-                        <button class="btn">View</button>
-                    </div>
+                    <button class="stellar" onclick="location.href='userdocx.html'">Open</button>
                 </div>
+                <div class="card4">
+                    <img src="icons/diversity.png" style="width:100px; height:100px">
+                    <h3>Profiling</h3>
+                    <p>View the barangay profiling by clicking here.</p>
+                </br>
+                    <button class="stellar" onclick="location.href='settings.html'">Open</button>
+                </div>
+            </div>
+            </section>
+            <section class="footer">
+                <p>To navigate, use the sidebar on the screen to access different sections, and click on any data point for a detailed breakdown and further analysis.</p>
             </section>
     </body>
 </html>
