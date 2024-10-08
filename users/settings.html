@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family:"Poppins", sans-serif;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        body::-webkit-scrollbar{
+            display:none;
+            scroll-behavior: smooth;
+        }
+        nav{
+            background-color: none;
+        }
+        nav li{
+            height: 50px;
+            list-style-type: none;
+        }
+        nav a{
+            position:relative;
+            font-size:15px;
+            display:flex;
+            text-decoration: none;
+            flex-direction: column;
+            color: rgb(78, 2, 78);
+            transition: .3s;
+             padding: 10px;
+        }
+        nav .fa{
+            margin-left:30px;
+            width: 70px;
+            height:40px;
+            font-size: 18px;
+        }
+        .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .logo1{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:10px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .Sidebar{
+            background-color: rgb(185, 240, 67);
+            list-style: none;
+            position: fixed;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 10px;
+        }
+        .Sidebar .nav-items{
+            margin-left: 30px;
+            font-family: "Poppins", sans-serif;
+            font-weight:normal;
+            font-size: 16px;
+        }
+        .Sidebar a:hover{
+            color: white;
+        }
+        .main1{
+            margin-left: 260px;
+            padding:10px;
+            margin-right:40px;
+            border-style:solid;
+            border-top:0;
+            border-right:0;
+            border-left:0;
+            border-color:rgb(78, 2, 78);
+        }
+        .profile{
+            background:rgb(78, 2, 78);
+            padding:100px;
+            margin-top: 30px;
+            border-radius:10px;
+            width:55%;
+            text-align: center;
+            margin-right:10px;
+            margin-left: 290px;
+
+        }
+        .form{
+            margin-left:290px;
+            margin-top:30px;
+        }
+        .form .label{
+            color:rgb(78, 2, 78);
+            font-size: 18px;
+            font-weight: lighter;
+            margin-top:30px;
+        }
+        .input-box{
+            border-top:0;
+            border-left:0;
+            border-right:0;
+            border-color: rgb(78, 2, 78);
+            outline:none;
+            width:80%;
+            height:10px;
+            padding:10px;
+        }
+        .wrapper{
+            height:150px;
+            width:150px;
+            position: relative;
+            background: url('icons/upload.png');
+            background-size: 100% 100%;
+            overflow:hidden;
+            align-items: center;
+            justify-content: center;
+            margin-left: 40%;
+        }
+        .upload{
+            position:absolute;
+            bottom:0;
+            outline:none;
+            color:transparent;
+            width:100%;
+            box-sizing: border-box;
+            padding: 15px 120px;
+            cursor: pointer;
+           }
+        .switch{
+            display: flex;
+            align-items: center;
+            border-radius: 200px;
+            display: flex;
+            width:100%;
+        }
+        .button{
+            background-color: rgb(78, 2, 78);
+            margin-top: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 200px;
+            cursor:pointer;
+            transition: 0.2s;
+        }
+        .button::before{
+            position:absolute;
+            content:'';
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 200px;
+            margin:5px;
+            transition: 0.2s;
+        }
+        input:checked + .button{
+            background-color: rgb(185, 240, 67);
+
+        }
+        input:checked + .button::before{
+            transform: translate(50px);
+        }
+        .switch input{
+            display: none;
+        }
+    </style>
+</head>
+    <nav>
+        <div class="Sidebar">
+            <li><h1 class="logo">BGHIS</h1></li>
+            <li><h1 class="logo1">dashboard</h1></li>
+        </br>
+    </br>
+            <li><a href="userdash.html">
+                <i class="fa fa-home" aria-hidden="true"><span class="nav-items">Home</span></i>
+            </a></li>
+            <li><a href="maps.html">
+                <i class="fa fa-map" aria-hidden="true"><span class="nav-items">Maps</span></i>
+                
+            </a></li>
+            <li><a href="#">
+                <i class="fa fa-solid fa-building" aria-hidden="true"><span class="nav-items">Barangay</span></i>
+            </a></li>
+            <li><a href="#">
+                <i class="fa fa-file" aria-hidden="true"><span class="nav-items">Clearance</span></i>
+            </a></li>
+            <li><a href="#">
+                <i class="fa fa-solid fa-gear" aria-hidden="true"><span class="nav-items">Settings</span></i>    
+            </a></li> 
+            <li><a href="userlogin.html">
+                <i class="fa fa-sign-out" aria-hidden="true"><span class="nav-items">Logout</span></i> 
+            </a></li>   
+        </div>
+    </nav>
+</br>
+<body>
+        <section class="main1">
+            <h2 class="message" style="font-size:50px; color:rgb(78, 2, 78);">Account Setting</h2>
+            <p>Set your name, change email address and your password here in this section.</p>
+        </section>
+        <section class="profile">
+            <div class="wrapper">
+                <input type="file" class="upload">
+            </div>
+        </br>
+            <h6 style="color:rgb(185, 240, 67); font-size:20px; margin-top:10px;">Change Profile</h6>
+        </section>
+        <section class="form">
+            <h2 style="color:rgb(78, 2, 78);">Profile Setting</h2>
+            <p>Change your name, email, and password. You can only change once the admin accepted your new name, email, and password.</p>
+        </br>
+    </br>
+        <div style="margin-left:10px;">
+            <h3 style="color:rgb(78, 2, 78);">Account Information</h3>
+            <h4 class="label">Barangay</h4>
+            <input type="text" class="input-box">
+            <h4 class="label">Name of user</h4>
+            <input type="text" class="input-box">
+            <h4 class="label">Email Address</h4>
+            <input type="email" class="input-box">
+            <h4 class="label">Password</h4>
+            <input type="password" class="input-box">
+        </div>
+        </section>
+        <section style="margin-left:290px; margin-top: 30px; margin-bottom: 100px;">
+            <h2 style="color:rgb(78, 2, 78);">Themes</h2>
+            <p>Enable dark mode here in this section.</p>
+        </br>
+            <h4 class="label" style="color:rgb(78, 2, 78); font-size: 18px; font-weight: lighter; margin-top:10px">Dark Mode</h4>
+            <div class="switch">
+                <input type="checkbox" id="check">
+                <label for="check" class="button"></label>
+            </div>
+        </section>
+    
+</body>
+</html>

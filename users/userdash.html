@@ -4,66 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
-            margin: 0;
-            padding: 0;
+            margin:0;
+            padding:0;
         }
         body{
-            font-family: "Poppins", sans-serif;
-            background: rgb(239, 255, 252);
+            font-family:"Poppins", sans-serif;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        body::-webkit-scrollbar{
+            display:none;
+            scroll-behavior: smooth;
         }
         nav{
-            list-style: none;
-            background-color: rgb(185, 240, 67);
-            height: 590px;
-            width:250px;
-        }
-        nav ul{
-            display:flex;
-            flex-direction: column;
-            align-items:normal;
-            margin-left: 20px;
-
+            background-color: none;
         }
         nav li{
-            color:purple;
-            list-style: none;
-            margin-top:15px;
+            height: 50px;
+            list-style-type: none;
         }
-        main{
-            
+        nav a{
+        position:relative;
+        font-size:15px;
+        display:flex;
+        text-decoration: none;
+        flex-direction: column;
+        color: rgb(78, 2, 78);
+        transition: .3s;
+        padding: 10px;
+        }
+        .Sidebar{
+            background-color: rgb(185, 240, 67);
+            list-style: none;
+            position: fixed;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-radius: 10px;
+        }
+        .Sidebar .nav-items{
+            margin-left: 30px;
+            font-family: "Poppins", sans-serif;
+            font-weight:normal;
+            font-size: 16px;
+        }
+        .Sidebar a:hover{
+            color: white;
+        }
+        nav .fa{
+            margin-left:30px;
+            width: 70px;
+            height:40px;
+            font-size: 18px;
+
+        }
+        .main1{
+            margin-left: 270px;
+            padding:10px;
+            margin-right:40px;
+            margin-top:50px;
+            border-style:solid;
+            border-radius:10px;
+            border-color:rgb(78, 2, 78);
+        }
+        .main{
+            padding-left: 270px;
+            padding-right:30px;
+            display:flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-top:30px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .logo1{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top:10px;
+            margin-left:10px;
+            color: rgb(78, 2, 78);
+        }
+        .main .main-skills{
+            margin-top:10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-skills .card1{
+            background:rgb(185, 240, 67);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            height: 100%;
+            margin-right:10px;
+        }
+        .main-skills .card2{
+            background:rgb(147, 177, 82);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .card3{
+            background:rgb(185, 240, 67);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+
+        }
+        .main-skills .card4{
+            background:rgb(147, 177, 82);
+            padding:10px;
+            border-radius:10px;
+            width:30%;
+            margin-right:10px;
+        }
+        .main-skills .stellar{
+            width:100px;
+            height:40px;
+            background:rgb(78, 2, 78);
+            border-radius:40px;
+            border:none;
+            outline:none;
+            color:white;
+            cursor: pointer;
+            transition: .7s ;
+        }
+        .stellar:hover{
+            background: white;
+            color:rgb(78, 2, 78);
+            font-weight:bold;
         }
     </style>
 </head>
+<nav>
+    <div class="Sidebar">
+        <li><h1 href="" class="logo">BGHIS</h1></li>
+        <li><h1 class="logo1">dashboard</h1></li>
+    </br>
+</br>
+        <li><a href="#">
+            <i class="fa fa-home" aria-hidden="true"><span class="nav-items">Home</span></i>
+        </a></li>
+        <li><a href="maps.html">
+            <i class="fa fa-map" aria-hidden="true"><span class="nav-items">Maps</span></i>
+            
+        </a></li>
+        <li><a href="#">
+            <i class="fa fa-solid fa-building" aria-hidden="true"><span class="nav-items">Barangay</span></i>
+        </a></li>
+        <li><a href="#">
+            <i class="fa fa-file" aria-hidden="true"><span class="nav-items">Clearance</span></i>
+        </a></li>
+        <li><a href="settings.html">
+            <i class="fa fa-solid fa-gear" aria-hidden="true"><span class="nav-items">Settings</span></i>    
+        </a></li> 
+        <li><a href="userlogin.html">
+            <i class="fa fa-sign-out" aria-hidden="true"><span class="nav-items">Logout</span></i> 
+        </a></li>   
+    </div>
+</nav>
 <body>
-    <nav>
-        <div class="side">
-            <ul>
-                <li><h1 style="text-transform: uppercase;">dashboard</h1></li>
-                <li><a href="">Map</a></li>
-                <li><a href="">Document</a></li>
-                <li><a href="">Profiling</a></li>
-                <li><a href="">Setting</a></li>
-                <li><a href="">Log-out</a></li>
-            </ul>
+</br>
+<section class="main1">
+    <h2 class="message" style="font-size:45px; color:rgb(78, 2, 78);">Welcome back User!</h2>
+    <p>This is the official BGHIS website where you can use our map to analyze and apply for clearances.</p>
+</section>
+</br>
+</br>
+    <section class="main">
+        <div class="main-skills">
+            <div class="card1">
+                <img src="icons/map.png" style="width: 100px; height: 100px">
+                <h3>Map</h3>
+                <p>View the entire Bulan area using map.</p>
+            </br>
+                <button class="stellar" onclick="location.href='maps.html'">View Map</button>
+            </div>
+        <div class="card2">
+            <img src="icons/house.png" style="width:100px; height:100px">
+            <h3>Barangay</h3>
+            <p>View the Profiles of the community.</p>
+        </br>
+            <button class="stellar">Profiles</button>
+            </div>
+        <div class="card3">
+            <img src="icons/documentation.png" style="width:100px; height:100px">
+            <h3>Clearances</h3>
+            <p>Apply for a clearance or document</p>
+        </br>
+            <button class="stellar">Apply</button>
         </div>
-    </nav>
-        <div>
-            <h2>Maps</h2>
-            <button class="maps">view map</button>
+        <div class="card4">
+            <img src="icons/settings.png" style="width:100px; height:100px">
+            <h3>Settings</h3>
+            <p>Change and configure your account</p>
+        </br>
+            <button class="stellar">Profile Setting</button>
         </div>
-        <div>
-            <h2>Issue Document</h2>
-            <button class="maps">make a request</button>
-        </div>
-        <div>
-            <h2>Barangays</h2>
-            <button class="brgy">View Profiling</button>
-        </div>
-        <div>
-            <h2>Settings</h2>
-            <button class="set">settings</button>
-        </div>
+    </div>
+    </section>
 </body>
 </html>
